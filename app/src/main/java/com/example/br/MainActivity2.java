@@ -9,19 +9,18 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
-    TextView te;
-    Button btn4 ;
+
+    Button btn3 ;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        te  = findViewById(R.id.textView);
-        btn4 = findViewById(R.id.button3);
+        btn3 = findViewById(R.id.button3);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         setTitle("About this application ");
 
-        btn4.setOnClickListener(new View.OnClickListener() {
+        btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

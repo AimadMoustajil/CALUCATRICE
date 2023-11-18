@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, String.valueOf(resulta), Toast.LENGTH_SHORT).show();
                 }
         });
+        /*Hello word*/
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
