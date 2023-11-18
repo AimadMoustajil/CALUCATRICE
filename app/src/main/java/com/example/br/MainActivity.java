@@ -2,6 +2,7 @@ package com.example.br;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     EditText editTextText, editTextText2;
     RadioButton radioButton, radioButton2, radioButton3;
-    Button btn1;
+    Button btn1,btn2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         radioButton2 = findViewById(R.id.radioButton2);
         radioButton3 = findViewById(R.id.radioButton3);
         btn1 = findViewById(R.id.button);
+        btn2 = findViewById(R.id.button2);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,5 +48,14 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, String.valueOf(resulta), Toast.LENGTH_SHORT).show();
                 }
         });
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+
+                startActivity(intent);
+            }
+        });
+
     }
 }
